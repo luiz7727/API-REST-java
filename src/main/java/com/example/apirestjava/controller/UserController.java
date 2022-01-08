@@ -72,7 +72,20 @@ public class UserController {
     }
 
 
+    //ResponseEntity(Reposta Entidade)
+    //ResponseEntity representa toda a resposta do HTTP:status code,headers e body.
+    //Entao, nós podemos configurar para mostrar por exemplo, a resposta http de uma criacção de um usuário no banco de dados
 
 
-
+    //Object<> é uma Classe que é usada para verificar se existe um valor ou não na variável que eh instanciada com ele.
+    //Optional<User> oldUser = _userRepository.findById(id);
+    //caso tenha um valor na variável oldUser, eu posso usar o IsPresent
+    /*
+    * if(oldUser.isPresent()){
+            User user = oldUser.get();
+            user.setNome(newUser.getNome());
+            _userRepository.save(user);
+            return new ResponseEntity<User>(user, HttpStatus.OK);
+        }
+     */
 }
